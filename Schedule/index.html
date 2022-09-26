@@ -48,7 +48,6 @@
         height: 40%;
         width: 30%;
         display: flex;
-
       }
       .search__input {
         width: 80%;
@@ -69,16 +68,17 @@
         font-weight: 600;
       }
       .main__h1 {
-        margin-left: 2rem;
+        margin-left: 2.5rem;
         font-size: 3rem;
       }
       .main__course {
         height: 16%;
         border: 1px solid lightslategray;
-        margin: 1rem 2rem 1rem 2rem;
+        margin: 1rem 2.5rem 1rem 2.5rem;
+        display: flex;
       }
       .main__nav {
-        margin-left: 2rem;
+        margin-left: 2.5rem;
       }
       .shedule {
         height: 100%;
@@ -118,17 +118,18 @@
       <h2 class="aside__logo">memo</h2>
       <ul class="aside__list">
         <li>Courses</li>
-        <li>Payment</li>
-        <li>Chat</li>
-        <li>Groups</li>
-        <li>Students</li>
+        <li><i class="las la-credit-card"></i>Payment</li>
+        <li><i class="las la-comment-dots"></i>Chat</li>
+        <li><i class="las la-user"></i>Groups</li>
+        <li><i class="las la-graduation-cap"></i>Students</li>
         <li>Support</li>
       </ul>
-      Log out
+      <i class="las la-sign-out-alt"></i>Log out
     </aside>
     <main class="main">
       <header class="main__header">
         <h2 class="main__h2">Leslie Alexander</h2>
+        Los Angeles, CA
         <div class="search">
           <input class="search__input" type="text" placeholder="Search.." />
           <span class="search__icon">
@@ -138,10 +139,25 @@
       </header>
       <h1 class="main__h1">Courses</h1>
       <nav class="main__nav">All Current Pending Complited</nav>
-      <div class="main__course"></div>
-      <div class="main__course"></div>
-      <div class="main__course"></div>
-      <div class="main__course"></div>
+      <div class="main__course">
+        <img src=img/Screenshot_1.png>
+        <p>Programing Oct 09, 2022</p>
+        <p>Object-Oriented Programing in Java</p>
+      </div>
+      <div class="main__course">
+        <p>How to track your course progress easily?</p>
+        <p>Find more ></p>
+      </div>
+      <div class="main__course">
+        <img src=img/Screenshot_2.png>
+        <p>Design Sep17, 2022</p>
+        <p>Visual Elements of User Interface Design</p>
+      </div>
+      <div class="main__course">
+        <img src=img/Screenshot_3.png>
+        <p>Design Aug 19, 2022</p>
+        <p>The Strategy of Content arketing</p>
+      </div>
     </main>
     <section class="shedule">
       <ul class="calendar">
