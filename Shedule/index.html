@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shedule</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Roboto:wght@300&display=swap");
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        font-family: "Inter Tight", sans-serif;
+      }
+      .aside {
+        background: #f9f9f9;
+        width: 18%;
+        height: 100%;
+        position: fixed;
+      }
+      li {
+        list-style-type: none;
+      }
+      .main {
+        width: 52%;
+        height: 100%;
+        position: absolute;
+        left: 18%;
+        border-right: 1px solid grey;
+      }
+      .main__header {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .search {
+        height: 40%;
+        width: 30%;
+        display: flex;
+
+      }
+      .search__input {
+        width: 80%;
+        border: none;
+        outline: none;
+        background: rgb(224, 222, 222);
+        font-size: 1rem;
+      }
+      .search__icon {
+        height: 100%;
+        width: 15%;
+        font-size: 2rem;
+        color: white;
+        background: #000;
+      }
+      .search__input::placeholder {
+        color: #bebebe;
+        font-weight: 600;
+      }
+      .main__h1 {
+        margin-left: 2rem;
+        font-size: 3rem;
+      }
+      .main__course {
+        height: 16%;
+        border: 1px solid lightslategray;
+        margin: 1rem 2rem 1rem 2rem;
+      }
+      .main__nav {
+        margin-left: 2rem;
+      }
+      .shedule {
+        height: 100%;
+        width: 28%;
+        position: absolute;
+        left: 72%;
+      }
+      .calendar {
+        padding: 0;
+        width: 350px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3rem;
+      }
+      .calendar__item {
+        list-style: none;
+        width: calc(100% / 7);
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .calendar__item--small {
+        font-size: 0.75rem;
+      }
+      .calendar__item--grey {
+        color: rgb(163, 163, 163);
+      }
+      .calendar__item--active {
+        background: #000;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <aside class="aside">
+      <h2 class="aside__logo">memo</h2>
+      <ul class="aside__list">
+        <li>Courses</li>
+        <li>Payment</li>
+        <li>Chat</li>
+        <li>Groups</li>
+        <li>Students</li>
+        <li>Support</li>
+      </ul>
+      Log out
+    </aside>
+    <main class="main">
+      <header class="main__header">
+        <h2 class="main__h2">Leslie Alexander</h2>
+        <div class="search">
+          <input class="search__input" type="text" placeholder="Search.." />
+          <span class="search__icon">
+            <i class="las la-search"></i>
+          </span>
+        </div>
+      </header>
+      <h1 class="main__h1">Courses</h1>
+      <nav class="main__nav">All Current Pending Complited</nav>
+      <div class="main__course"></div>
+      <div class="main__course"></div>
+      <div class="main__course"></div>
+      <div class="main__course"></div>
+    </main>
+    <section class="shedule">
+      <ul class="calendar">
+        <li class="calendar__item calendar__item--small">Sun</li>
+        <li class="calendar__item calendar__item--small">Mon</li>
+        <li class="calendar__item calendar__item--small">Tue</li>
+        <li class="calendar__item calendar__item--small">Wed</li>
+        <li class="calendar__item calendar__item--small">Thu</li>
+        <li class="calendar__item calendar__item--small">Fri</li>
+        <li class="calendar__item calendar__item--small">Sat</li>
+        <li class="calendar__item calendar__item--grey">26</li>
+        <li class="calendar__item calendar__item--grey">27</li>
+        <li class="calendar__item calendar__item--grey">28</li>
+        <li class="calendar__item calendar__item--grey">29</li>
+        <li class="calendar__item calendar__item--grey">30</li>
+        <li class="calendar__item">1</li>
+        <li class="calendar__item">2</li>
+        <li class="calendar__item">3</li>
+        <li class="calendar__item">4</li>
+        <li class="calendar__item">5</li>
+        <li class="calendar__item calendar__item--active">6</li>
+        <li class="calendar__item">7</li>
+        <li class="calendar__item">8</li>
+        <li class="calendar__item">9</li>
+        <li class="calendar__item">10</li>
+        <li class="calendar__item">11</li>
+        <li class="calendar__item">12</li>
+        <li class="calendar__item">13</li>
+        <li class="calendar__item">14</li>
+        <li class="calendar__item">15</li>
+        <li class="calendar__item">16</li>
+        <li class="calendar__item">17</li>
+        <li class="calendar__item">18</li>
+        <li class="calendar__item">19</li>
+        <li class="calendar__item">20</li>
+        <li class="calendar__item">21</li>
+        <li class="calendar__item">22</li>
+        <li class="calendar__item">23</li>
+        <li class="calendar__item">24</li>
+        <li class="calendar__item">25</li>
+        <li class="calendar__item">26</li>
+        <li class="calendar__item">27</li>
+        <li class="calendar__item">28</li>
+        <li class="calendar__item">29</li>
+        <li class="calendar__item">30</li>
+      </ul>
+    </section>
+  </body>
+</html>
