@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body{
+        height: 100%;
+        box-sizing: border-box;
+      }
+     
+      body {
+        margin: 0;
+        background: #2b2e56;
+        padding: 0;
+      }
+      .wrapper {
+        height: 98%;
+        width: 98%;
+        display: grid;
+        grid-template-columns: 20% 30% 30% 20%;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-areas: 
+        "aside header header section"
+        "aside article1 article2 nav"
+        "aside article3 article4 nav"
+        ;
+        gap: 10px;
+      }
+      .aside{
+      background: #6dbe4f;
+      grid-area: aside;
+      }
+      .header{
+        background: #6dbe4f;
+        grid-area: header;
+      }
+      .nav {
+        background: #6dbe4f;
+        grid-area: nav;
+      }
+      .section {
+        background: #ec3437;
+        grid-area: section;
+      }
+      .article1 {
+        background: #fbb22f;
+        grid-area: article1;
+      }
+      .article2{
+        background: #ec3437;
+        grid-area: article2;
+      }
+      .article3{
+        background: #fbb22f;
+        grid-area: article3;
+      }
+      .article4{
+        background: #ec3437;
+        grid-area: article4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside class="aside"></aside>
+      <header class="header"></header>
+      <article class="article1"></article>
+      <article class="article2"></article>
+      <article class="article3"></article>
+      <article class="article4"></article>
+      <section class="section"></section>
+      <nav class="nav">8</nav>
+    </div>
+  </body>
+</html>
