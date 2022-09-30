@@ -1,0 +1,15 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item {
+width: calc(100% /2 - 20px);
+background: grey;
+height: calc(100vh /2);
+margin: 10px;
+}
+.item-1{
+    background: url(./img/1298_Prague_gallery.jpg);
+    background-size: cover;
+}
